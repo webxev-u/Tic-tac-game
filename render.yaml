@@ -1,10 +1,11 @@
 services:
-  - type: web
-    name: tic-tac-toe-react
+  - type: static
+    name: tic-tac-toe-react # Change to "starpath" if using StarPath
     env: static
-    rootDir: src
     staticPublishPath: dist
     buildCommand: npm install && npm run build
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NODE_VERSION
+        value: 18
