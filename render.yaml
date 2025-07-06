@@ -2,6 +2,7 @@ services:
   - type: web
     name: tic-tac-toe-react
     env: static
+    rootDir: src
     staticPublishPath: dist
     buildCommand: npm install && npm run build
     envVars:
