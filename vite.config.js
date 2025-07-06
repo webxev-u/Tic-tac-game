@@ -11,5 +11,8 @@ export default defineConfig({
     rollupOptions: {
       input: path.resolve(__dirname, 'public/index.html')
     }
+  },
+  server: {
+    port: process.env.VITE_PORT || 5173 // Use .env port or default to 5173
   }
 });
