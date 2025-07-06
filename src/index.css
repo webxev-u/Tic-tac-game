@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cell:hover {
+  background-color: #4a5568;
+  transition: background-color 0.3s ease;
+}
+
+.winning {
+  background-color: #48bb78 !important;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.losing {
+  background-color: #f56565 !important;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
